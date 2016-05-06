@@ -11,7 +11,7 @@ Somehow blogging has turned out to be one of the more difficult aspects of start
 
 2.) I don't make it enough of a priority and then life gets in the way and eventually I just kind of fall off the horse.
 
-So let's not do either of those things. For the record: I am learning to code, I have made the commitment to The Flatiron School's Learn-Verified program for Full-Stack Web Development, and I am currently waist-deep in the HTML/CSS lessons.
+So let's not do either of those things. For the record: my name is Elyse, I am learning to code, I have made the commitment to The Flatiron School's Learn-Verified program for Full-Stack Web Development, and I am currently waist-deep in the HTML/CSS lessons.
 
 So why did I decide to become a developer?
 
