@@ -27,7 +27,7 @@ After college, I got started in the nonprofit sector, which led to an interest i
 
 I love the creative possibilities that coding opens up and the real potential for impact on how people work and play. In every job I have worked I’ve seen the importance of the technology we rely on, from the spreadsheet we used to track membership at our startup to the major software implementation that tied our internal systems in knots at my previous job. I want to be part of building solutions for organizations that make work better, more intuitive, and even joyful.
 
-I moved to Houston at the beginning of this year to be in city and state as my significant other. Between small pleasures like cooking meals together again and teaching myself how to paint, I took a lot of time thinking through what was next. A chance email about a scholarship opportunity from Switchup.com led me to The Flatiron School, and, after years of tinkering with HTML and CSS and dabbling on Codecademy, I realized this was it.
+I moved to Houston at the beginning of this year to be in the same city and state as my significant other. Between small pleasures like cooking meals together again and teaching myself how to paint, I took a lot of time thinking through what was next. A chance email about a scholarship opportunity from Switchup.com led me to The Flatiron School, and, after years of tinkering with HTML and CSS and dabbling on Codecademy, I realized this was it.
 
 So that's me.
 
