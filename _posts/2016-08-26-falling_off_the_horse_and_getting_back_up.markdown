@@ -11,7 +11,7 @@ Last month, I wrote this in my "blog post ideas" file on Evernote:
 > 
 > At some point I end up breaking out of the cycle, either because I've walked away from it and the guilt has subsided enough for me to be functional or (more usually) because the guilt is so bad it's overcome the amount to which i don't want to deal with it. Kind of like this:
 > 
-> ![](http://imgur.com/a/KNw3i)
+> ![](http://i.imgur.com/sGPcJdB.png)
 > 
 > The third option is that the thing I needed to do somehow disappears entirely, which I've found can happen when I get busy enough but (a) that level of busy-ness isn't healthy at all and (b) that's not an actual solution. Whether I actually get the thing done or manage to disappear it, the whole thing just feels bad.
 
