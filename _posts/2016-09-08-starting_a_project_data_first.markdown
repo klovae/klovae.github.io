@@ -9,7 +9,7 @@ date:   2016-09-08 17:08:24 -0400
 
 That mandate came from my economics professor, Dr. Pepper (his actual name), on the first day of my senior year public policy seminar. That class was the last thing standing between me and finishing my econ degree. Every unfortunate soul in that room (myself included) had work around their senioritis to develop, research, and analyze a public policy issue using econometrics.
 
-Dr. Pepper strongly encouraged us to tackle topics where data, especially clean data, was readily available through the US Census, tax and housing data, or any of number of large data sets compiled specifically for the kind of work we were doing. Unfortunately, even these large datasets have significant limits, and I'd come up with a number of super exciting! research topics only to have my professor tiredly shake his head and inform me that the data I would need didn't exist. *Undergraduates.*
+Dr. Pepper recommended that we tackle topics where data, especially clean data, was readily available through the US Census, tax and housing data, or any of number of large data sets compiled specifically for the kind of work we were doing. Unfortunately, even these large datasets have significant limits, and I'd come up with a number of super exciting! research topics only to have my professor tiredly shake his head and inform me that the data I would need didn't exist. *Undergraduates.*
 
 Some students felt strongly enough about their project idea that, even after it became clear that the data was hard to find, they decided to stick with it. Over the course of the semester our class got a real-time lesson in Data First: while those of us with easily-assembled data moved on to our analysis, our other classmates struggled to find, compute, and scrape together enough data to produce legit results. A few of them even had to pivot before the end of the class because **ultimately you can't make data where there isn't any available.**
 
@@ -39,7 +39,11 @@ So what now? In the following order:
 - Spend more time than I care to admit scouring the HTML for NPR's Podcast Directory
 - [FIND THE HOLY GRAIL](http://www.npr.org/podcasts/2026/government-organizations/partials?start=placeholder)
 
-Every time the user scrolls to the bottom on one of the category pages, the site pulls data from a secret page buried in the HTML that contains all the podcast series listed in that category. I spent so much time looking for the secret page in the site's HTML that I was starting to doubt its existence, but it's real and totally scrapable. I'm still not 100% sure how the AJAX requests work, but I know I can modify the URL after `start=` to get all the podcasts for each category. I'll post about the technical solution tomorrow but if you're starting a similar data-driven project I want to save you from steps 1-6 if I can:
+Every time the user scrolls to the bottom on one of the category pages, the site pulls data from a [secret page buried in the HTML](http://www.npr.org/podcasts/2026/government-organizations/partials?start=placeholder) that contains all the podcast series listed in that category. I spent so much time looking for the secret page in the site's HTML that I was starting to doubt its existence, but it's real and totally scrapable. 
+
+`http://www.npr.org/podcasts/2026/government-organizations/partials?start=placeholder`
+
+I'm still not 100% sure how the AJAX requests work, but I know I can modify the URL after `start=` to get all the podcasts for each category. I'll post about the technical solution tomorrow but if you're starting a similar data-driven project I want to save you from project panic through the following proactive steps:
 
 **STEPS TO START YOUR PANIC-FREE PROJECT:**
 
