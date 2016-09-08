@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Starting a Project: Data First"
-date:   2016-09-08 21:08:23 +0000
+date:   2016-09-08 17:08:24 -0400
 ---
 
 
@@ -23,7 +23,7 @@ To make my program work, I need to scrape NPR's podcast categories and use the c
 
 **NOKOGIRI, MEET INFINITE SCROLL**
 
-If you look at a category in NPR's podcast directory (http://www.npr.org/podcasts/2000/arts), the site displays an initial set of podcasts from that category, probably the most popular. If you want to see the other podcasts in that directory, you have to manually scroll to the bottom of the page and wait for them to load. When I did my initial look-through of the site, I noticed the infinite scroll but figured it wasn't going to be an issue.
+[If you look at a category in NPR's podcast directory](http://www.npr.org/podcasts/2000/arts), the site displays an initial set of podcasts from that category, probably the most popular. If you want to see the other podcasts in that directory, you have to manually scroll to the bottom of the page and wait for them to load. When I did my initial look-through of the site, I noticed the infinite scroll but figured it wasn't going to be an issue.
 
 While working on my helper methods to scrape the category page, I took a closer look at the HTML and realized that the contents of the infinite scroll aren't even part of the page's HTML until you scroll to the bottom. From the standpoint of using Nokogiri, I'm only able to scrape the popular podcasts for any category. Given that one of my major motivations for this project was exploring some of NPR's less well-known podcasts, I started to worry that the project was superfluous  — I don't need a CLI gem to find out about Car Talk or Fresh Air, I literally just need to turn on the radio.
 
