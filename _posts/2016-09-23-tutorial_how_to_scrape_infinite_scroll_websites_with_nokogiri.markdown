@@ -17,7 +17,7 @@ The first important thing to know is that *all is not lost* (though I was 100% i
 2. Understanding how the query string works to load more data, and what happens when it runs out
 3. Incorporating code into your scraper to *responsibly* increment the query string and stop at the end.
 
-At a high level, what's happening on the back end is that the website you're scrolling as the user is loading in more content using a combination of JavaScript and AJAX. That said, **you don't actually need to know JavaScript, jQuery or AJAX to be able to get the data you need**. I don't (yet), and I was able to 
+At a high level, what's happening on the back end is that the website you're scrolling as the user is loading in more content using a combination of JavaScript and AJAX. That said, **you don't actually need to know or use JavaScript, jQuery or AJAX for this to work**. I don't (yet), and I was able to get the data I needed pretty easily once I figured out what I was doing.
 
 The important bit for our purposes is that in order to get more content, the script for the infinite scroll is using a specific URL and incrementing a query string ([which you can read more about on Wikipedia in the "structure" section](https://en.wikipedia.org/wiki/Query_string)). Once you find that URL, you can can modify the query with your code to replicate what the script is doing and get the data you need.
 
