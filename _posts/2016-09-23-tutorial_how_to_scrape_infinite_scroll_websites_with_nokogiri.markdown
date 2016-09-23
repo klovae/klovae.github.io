@@ -128,8 +128,8 @@ Pop Chart Lab's HTML also makes it pretty easy. When there are no more available
 counter = 1
 until div is empty
 scrape http://www.npr.org/podcasts/2051/society-culture/partials?start=(counter) 
- get your desired content with css selectors
- do something with that content (make a hash, save to an array, etc.)
+get your desired content with css selectors
+do something with that content (make a hash, save to an array, etc.)
 counter += the number of podcasts we just scraped
 end
 ```
