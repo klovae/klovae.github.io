@@ -153,7 +153,6 @@ Happy coding!
 
 **MORE RESOURCES:**
 * [Harsh Bhimjyani's Blog: Scraping from a website with infinite scrolling](https://harshbhimjyani.wordpress.com/2015/05/04/scraping-from-a-website-with-infinite-scrolling/)
-
 * [Quora: How do I scrape a page with infinite scrolling when I'm not sure about the technique it uses?](https://harshbhimjyani.wordpress.com/2015/05/04/scraping-from-a-website-with-infinite-scrolling/)
 
 
