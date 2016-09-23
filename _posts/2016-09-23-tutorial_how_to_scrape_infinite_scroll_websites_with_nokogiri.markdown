@@ -116,7 +116,7 @@ While it turned out that NPR's query string loads 24 podcasts by default, only t
 
 In the case of NPR's podcast directory, you're left with an empty `<div>`.
 
-Pop Chart Lab's HTML also makes it pretty easy. Sup `<div id="product-list-foot">`!
+Pop Chart Lab's HTML also makes it pretty easy. When there are no more available podcasts, `div id="more` disappears!
 
 ![](http://i.imgur.com/y3grc5H.png)
 
@@ -134,7 +134,7 @@ counter += the number of podcasts we just scraped
 end
 ```
 
-Pop Chart Lab's scraper pseudocode would look almost the same except we're incrementing until we reach `div id="product-list-foot"` and only increasing `counter` by 1 with each loop.
+Pop Chart Lab's scraper pseudocode would look almost the same except we're incrementing until `div id="more` disappears and only increasing `counter` by 1 with each loop. We also know if there are less than 14 products on a page or, if the last page has 14 products, the next page has zero.
 
 **Step 8. Write and test your code.** 
 
