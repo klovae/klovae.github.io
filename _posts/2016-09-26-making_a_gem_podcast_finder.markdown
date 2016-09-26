@@ -9,6 +9,7 @@ date:   2016-09-25 23:46:20 -0400
 That's not at all to say that this project went quickly or smoothly. I probably learned as much about myself as I did about coding over the past month. According to Github, my first commit was September first, and the last commit I made that I would consider "final" was this past Friday, September 23rd, just over three weeks later. In this post I want to talk about the process of putting the gem together and lessons I learned along the way.
 
 **CONCEPT**
+
 I talked a little bit about this [in a previous post on starting panic-free projects](http://klovae.github.io/2016/09/08/starting_a_project_data_first/), but the idea for this project came out of my recent need for something to fill the time while driving in and out of in-town Houston. When I started listening to [Invisibilia](http://www.npr.org/podcasts/510307/invisibilia) on the [NPR One](http://one.npr.org/) app, I realized that NPR and its affiliate stations regularly produce a ton of interesting podcasts that I'd never even heard of. I wanted a way to find and listen to some of these lesser-known podcasts instead of just hoping that NPR's app would find them for me.
 
 The goal: create a CLI gem to help me quickly browse and get details on NPR's vast podcast collection.
@@ -22,6 +23,7 @@ This helped me think through what data I would need to scrape and how everything
 *At the start of the project, my CLI was going to have options for browsing podcasts by category, by alphabetical order, and station. Toward the end of week 2 I decided to limit the scope of the project for the sake of finishing the project before 2018. I'll talk more about  that below when I go over lessons learned.
 
 **SETTING UP MY FILES**
+
 Once I had a good idea of what I wanted to start scraping, I started the directory in Learn's IDE, did my official git init and got my remote repo set up.
 
 ![](http://i.imgur.com/z6uhBuc.png)
@@ -33,6 +35,7 @@ To be honest, I straight up avoided the gem part of this project until my progra
 But just because you know how to do something doesn't mean that you should. What I would realize later is that getting your up on Rubygems.org and making sure that it installs and runs on other people's computers is a lot less straightforward than it seems. There's a reason the command `bundle gem name_here` exists -- it takes a lot of the guesswork out of the process and lets you focus on the programming instead of the packaging.
 
 **GETTING MY DATA: EXPERIMENTS IN SCRAPING WITH NOKOGIRI**
+
 I'm keeping this section short because [I've already written about the issue that came up]( http://klovae.github.io/2016/09/08/starting_a_project_data_first/) when I started trying to write my scraper methods and [put together a tutorial on the way I eventually solved it](http://klovae.github.io/2016/09/23/tutorial_how_to_scrape_infinite_scroll_websites_with_nokogiri/).
 
 The TL;DR version is that NPR's Podcast Directory uses an infinite scroll script to provide users with more content as they scroll down on a given page. What that meant for my project was that Nokogiri wasn't able to scrape the page as-is because the content is literally not part of the page until user input (scrolling) tells the page to load more. The good news is that infinite scroll scripts have to load their content in from somewhere, and once you find the URL for the source of the content, you can just scrape that URL instead.
@@ -58,8 +61,8 @@ Having all this laid out in my diagram ended up making this portion of the proje
 * Objects instantiated by DataImporter are correctly associated: Categories have many Podcasts, which in turn know what Categories they belong to. Stations have many podcasts, which in turn know what Station they belong to. Podcasts know what Episodes they have, which in turn know which Podcast they belong to.
 * I can string together attr_accessors from multiple classes without raising errors or getting incorrect data. For example, I can ask the arts category the name of the station that creates the first podcast in its collection by calling .podcasts.first.station.name on it.
 
-
 **THE COMMAND LINE**
+
 After I had the basics of my objects working together and my scraper and importer methods bringing the data in, it was time to start my command line. At this point, I was setting out with a starter menu that had the following options:
 
 1. Browse podcasts by category
@@ -137,9 +140,7 @@ Here's the code for choosing an episode:
 	
 You can see here that this method gets input, and if it's a number that corresponds with the episode numbers, it will display that episode. If it's a number but doesn't correspond, the program reminds the user what numbers are valid and restarts the method to get input again. If the input is "BACK", then the program goes back up a level to look at the podcasts in the user's chosen category. For all other input, the following applies:
 
-> If the input is "MORE", which is not an option in this situation, this method re-interprets the input as the user being stuck.
-> From here, the input goes through the proceed_based_on_input decision maker, which will catch and act accordingly if the user inputs the standards: MENU, HELP, or EXIT. 
-> In the case of STUCK or HELP, the user will be returned to the choose_episode method and asked for input again.
+> If the input is "MORE", which is not an option in this situation, this method re-interprets the input as the user being stuck. From here, the input goes through the proceed_based_on_input decision maker, which will catch and act accordingly if the user inputs the standards: MENU, HELP, or EXIT. In the case of STUCK or HELP, the user will be returned to the choose_episode method and asked for input again.
 
 In the future I'd like to go deeper into using recursion this way, and how to tell when you need it, because I really struggled with how to create code to meet my requirements, and Googling "writing recursive menus" wasn't a huge help. Granted, I'm still leveling up my Google-fu, but general research into recursion turned up a lot of CS101 kind of abstract explanations that I had trouble applying to what I was trying to do.
 
@@ -150,6 +151,7 @@ One of the requirements for the CLI gem is the following: "Data provided must go
 Given that my code already met that requirement by going Categories to Podcasts to Episodes, I made the tough decision to stop there, spend the remaining time making things work well and look nice, and move on to the final step: packaging Podcast Finder as a gem.
 
 **PACKAGING MY GEM**
+
 And now we're back to (what should have been) the start. 
 
 Because of my stubborn refusal to use bundle gem to create my scaffolding, I ended up spending WAY TOO MUCH TIME trying to get my gem packaged, uploaded to [Rubygems.org](http://www.rubygems.org), and running on other people's computers. Along the way I learned a lot about Gemspecs, dependencies, and ultimately knowing when to give up. 
@@ -163,6 +165,7 @@ If you'd like to try it out yourself, I'd be totally delighted. Feel free to dow
 Big thanks to to my fellow Learners on the OO-Neighbors slack channel for helping me to test everything, especially Brian Reynolds, who was super helpful in breaking my menus : )
 
 **WHAT I LEARNED**
+
 A list in no particular order, to be read before I start another project of similar magnitude. Feel free to crib if they're helpful:
 
 1. I have the ability to solve any coding issue/challenge that I come up against
