@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Making a Gem: Podcast Finder"
-date:   2016-09-26 03:46:19 +0000
+date:   2016-09-25 23:46:20 -0400
 ---
 
  It's kind of awesome to be writing this blog post. I have to remind myself that even just a couple of months ago I was reading other Learn students' posts about making their CLI gem projects and thinking "holy shit they know so much." With still so many lessons to go, I have trouble keeping in perspective how much I've learned already, so I want to use this as an opportunity to say: hell yeah, me.
@@ -9,7 +9,6 @@ date:   2016-09-26 03:46:19 +0000
 That's not at all to say that this project went quickly or smoothly. I probably learned as much about myself as I did about coding over the past month. According to Github, my first commit was September first, and the last commit I made that I would consider "final" was this past Friday, September 23rd, just over three weeks later. In this post I want to talk about the process of putting the gem together and lessons I learned along the way.
 
 **CONCEPT**
-
 I talked a little bit about this [in a previous post on starting panic-free projects](http://klovae.github.io/2016/09/08/starting_a_project_data_first/), but the idea for this project came out of my recent need for something to fill the time while driving in and out of in-town Houston. When I started listening to [Invisibilia](http://www.npr.org/podcasts/510307/invisibilia) on the [NPR One](http://one.npr.org/) app, I realized that NPR and its affiliate stations regularly produce a ton of interesting podcasts that I'd never even heard of. I wanted a way to find and listen to some of these lesser-known podcasts instead of just hoping that NPR's app would find them for me.
 
 The goal: create a CLI gem to help me quickly browse and get details on NPR's vast podcast collection.
@@ -116,24 +115,24 @@ Here's the code for choosing an episode:
 
 ```
   def choose_episode
-    self.get_input
-    if @input.class == Fixnum && @input.between?(1, @podcast_choice.episodes.count)
-      @episode_choice = @podcast_choice.episodes[@input-1]
+	  self.get_input
+	  if @input.class == Fixnum && @input.between?(1, @podcast_choice.episodes.count)
+	    @episode_choice = @podcast_choice.episodes[@input-1]
       self.display_episode_info
-    elsif @input.class == Fixnum && !@input.between?(1, @podcast_choice.episodes.count)
-      puts "Sorry, that's not an episode option. Please enter a number between 1 and #{@podcast_choice.episodes.count} to proceed."
-      self.choose_episode
-    elsif @input == "BACK"
-      @podcast_counter = 0
-      self.browse_category
-    else
-      if @input == "MORE"
-        @input = "STUCK"
-      end
-      self.proceed_based_on_input
-      self.choose_episode unless @continue == "EXIT"
-    end
-  end
+	  elsif @input.class == Fixnum && !@input.between?(1, @podcast_choice.episodes.count)
+	    puts "Sorry, that's not an episode option. Please enter a number between 1 and #{@podcast_choice.episodes.count} to proceed."
+	    self.choose_episode
+	  elsif @input == "BACK"
+	    @podcast_counter = 0
+	    self.browse_category
+	  else
+	    if @input == "MORE"
+	      @input = "STUCK"
+	    end
+	    self.proceed_based_on_input
+	    self.choose_episode unless @continue == "EXIT"
+	  end
+	end
 	```
 	
 You can see here that this method gets input, and if it's a number that corresponds with the episode numbers, it will display that episode. If it's a number but doesn't correspond, the program reminds the user what numbers are valid and restarts the method to get input again. If the input is "BACK", then the program goes back up a level to look at the podcasts in the user's chosen category. For all other input, the following applies:
