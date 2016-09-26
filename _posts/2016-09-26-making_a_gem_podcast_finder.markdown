@@ -133,7 +133,7 @@ Here's the code for choosing an episode:
 	    self.choose_episode unless @continue == "EXIT"
 	  end
 	end
-	```
+```
 	
 You can see here that this method gets input, and if it's a number that corresponds with the episode numbers, it will display that episode. If it's a number but doesn't correspond, the program reminds the user what numbers are valid and restarts the method to get input again. If the input is "BACK", then the program goes back up a level to look at the podcasts in the user's chosen category. For all other input, the following applies:
 
