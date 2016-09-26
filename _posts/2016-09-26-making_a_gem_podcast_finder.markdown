@@ -4,7 +4,7 @@ title:  "Making a Gem: Podcast Finder"
 date:   2016-09-25 23:46:20 -0400
 ---
 
- It's kind of awesome to be writing this blog post. I have to remind myself that even just a couple of months ago I was reading other Learn students' posts about making their CLI gem projects and thinking "holy shit they know so much." With still so many lessons to go, I have trouble keeping in perspective how much I've learned already, so I want to use this as an opportunity to say: hell yeah, me.
+ It's kind of awesome to be writing this blog post. I have to remind myself that even just a couple of months ago I was reading other Learn students' posts about making their CLI gem projects and thinking "holy shit they know so much." With still so many lessons to go, I have trouble keeping in perspective how much I've learned already, so I want to use this as an opportunity to say: *hell yeah, me.*
 
 That's not at all to say that this project went quickly or smoothly. I probably learned as much about myself as I did about coding over the past month. According to Github, my first commit was September first, and the last commit I made that I would consider "final" was this past Friday, September 23rd, just over three weeks later. In this post I want to talk about the process of putting the gem together and lessons I learned along the way.
 
