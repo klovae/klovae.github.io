@@ -54,19 +54,19 @@ Honestly this is still tougher than I feel like it should be in 2016, but I've b
 Two chats I've really enjoyed participating in are:
 
 **Code Newbie**
-When: Wednesday nights at 9pm Eastern
-Hashtag: #codenewbie
-Host: [@codenewbies](https://twitter.com/codenewbies), created by [@saronyitbarek](https://twitter.com/saronyitbarek)
+* When: Wednesday nights at 9pm Eastern
+* Hashtag: #codenewbie
+* Host: [@codenewbies](https://twitter.com/codenewbies), created by [@saronyitbarek](https://twitter.com/saronyitbarek)
 
 Code Newbie is a superb podcast and support group started by Saron Yitbarek that bills itself as 
 "the most supportive community of programmers and people learning to code." (it's true). Each week's chat generally corresponds with the most recent podcast; tonight's chat is about diversity in tech and follows on a great conversation with Ashe Dryden, programmer, organizer and diversity consultant.
 
 
 **Dev Discuss**
-When: Tuesday nights at 9pm Eastern
-Hashtag: #devdiscuss
-Host: [@devdiscuss](https://twitter.com/devdiscuss) / [@thepracticaldev](https://twitter.com/thepracticaldev)
-[Chat transcript from chat on November 29th](https://twitter.com/i/moments/804002024027226116)
+* When: Tuesday nights at 9pm Eastern
+* Hashtag: #devdiscuss
+* Host: [@devdiscuss](https://twitter.com/devdiscuss) / [@thepracticaldev](https://twitter.com/thepracticaldev)
+* [Chat transcript from chat on November 29th](https://twitter.com/i/moments/804002024027226116)
 
 While Dev Discuss isn't necessarily billed for new coders, I've found it to be a great group of really helpful devs who get together to talk about a wide variety of coding topics. Recent chats have covered Impostor Syndrome, personal projects, an education paths. I've met some really nice people and gotten great resources from this chat.
 
