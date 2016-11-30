@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Social Programming: What is a Twitter Chat?"
-date:   2016-11-30 23:38:23 +0000
+date:   2016-11-30 18:38:23 -0500
 ---
 
 
@@ -22,7 +22,7 @@ Later as I got my footing, it also became an important channel for establishing 
 
 Now, 6 years later, everything old is new again: I'm discovering that all of the things I loved about twitter when I started my nonprofit career are true again as I'm learning to code. So, in the holiday spirit of shraring, I wanted to write up a quick guide to my favorite part of Twitter for my [Learn.co](http://learn.co) crew and anyone else learning to code: Twitter chats!
 
-## Twitter chat basics
+**TWITTER CHAT BASICS**
 
 Calling a Twitter chat a "chat" can be somewhat misleading, especially if you grew up with chatrooms and group messages, but they're functionally very similar.
 
@@ -70,7 +70,8 @@ Host: [@devdiscuss](https://twitter.com/devdiscuss) / [@thepracticaldev](https:/
 
 While Dev Discuss isn't necessarily billed for new coders, I've found it to be a great group of really helpful devs who get together to talk about a wide variety of coding topics. Recent chats have covered Impostor Syndrome, personal projects, an education paths. I've met some really nice people and gotten great resources from this chat.
 
-## How to keep up with, and enjoy, your next twitter chat
+**HOW TO KEEP UP WITH YOUR FIRST TWITTER CHAT**
+
 Similarly to a group text or in a chat app, the greater the number of people in the conversation, the more difficult it gets to follow all the different threads and side-conversations emerging. In the next post, which I'm planning to finish before the end of the week, I'll cover strategies and tools to stay afloat and contribute meaningfully to the conversation.
 
 
