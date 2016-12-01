@@ -35,7 +35,7 @@ Just head to Twitter.com at the designated time, enter the hashtag (with the #) 
 
 ![](http://i.imgur.com/srRZL13.png)
 
-The number of tweets coming in usually outpaces Twitter's natural refresh rate, so you'll probably have to manually refresh the page regularly to keep up.
+The number of tweets coming in usually outpaces Twitter's natural refresh rate, so you'll probably have to regularly refresh the page to keep up.
 
 **Who can start/run a Twitter chat?**
 Anyone can start a Twitter chat, since all it really involves is an agreed-upon meeting time, participants, and a hashtag for organizing. I've seen companies host twitter chats, as well as professional associations, bloggers, podcast hosts, journalists, and informal groups of folks on Twitter with shared interests.
