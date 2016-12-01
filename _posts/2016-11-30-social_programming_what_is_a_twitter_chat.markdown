@@ -30,6 +30,13 @@ In the simplest terms, a Twitter chat happens when a group of people come togeth
 
 The only thing that really differentiates a Twitter chat from something like Slack or a big ol' Facebook thread is that unless you have a private Twitter account, everything tweeted in the tweet chat is public and searchable by the chat's hashtag. What's nice is that if you don't have an account or don't feel like actively participating, you can check out any chat just by searching the hashtag on Twitter.
 
+**How do I follow a Twitter chat?**
+Just head to Twitter.com at the designated time, enter the hashtag (with the #) into the search bar, and switch the search tab from "Top" to "Latest" like so:
+
+![](http://i.imgur.com/srRZL13.png)
+
+The number of tweets coming in usually outpaces Twitter's natural refresh rate, so you'll probably have to manually refresh the page regularly to keep up.
+
 **Who can start/run a Twitter chat?**
 Anyone can start a Twitter chat, since all it really involves is an agreed-upon meeting time, participants, and a hashtag for organizing. I've seen companies host twitter chats, as well as professional associations, bloggers, podcast hosts, journalists, and informal groups of folks on Twitter with shared interests.
 
