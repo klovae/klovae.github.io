@@ -20,7 +20,7 @@ But what you lose with an analog system is an easy way to look at your data. And
 
 The first step to being able to get all this data was to build a working BuJo app, that followed the same set of rules and had the same features as an analog BuJo. There are other components to a full Bullet Journal, like a monthly log, an index, and of course notes, but for the kinds of data that I'm looking to collect, the daily log is really the most important, so that's what I set out to build.
 
-# GETTING STARTED BETTER
+**GETTING STARTED BETTER**
 
 In a lot of ways, my Sinatra project feels like my first Real dev project -- unlike our first assessment project, the CLI gem, the Sinatra project requires an actual factual front end, user accounts, and a database. Knowing how much work (and sweat, and tears) it took to put together my CLI gem, I was determined to make use of [the lessons I learned with that first project](http://elyseklova.com/2016/09/26/making_a_gem_podcast_finder/).
 
@@ -55,7 +55,7 @@ For me, this lesson in particular was the biggest gamechanger. With the CLI gem 
 
 Following this process almost completely eliminated the feelings of being stuck and overwhelmed. It also made identifying bugs, errors, and general weird behavior significantly easier because I always knew that all the functionality I'd built up to that point was working correctly.
 
-# MODELS AND MIGRATIONS
+**MODELS AND MIGRATIONS**
 
 For the most part, designing this app was fairly straightforward; I started with three basic models, User, Day, and Task. A day `belongs_to` users and tasks belong to both days and users. A user `has_many` of both. A user will create tasks on a specific day (usually today), and then can see all the tasks for a specific day, plus edit and delete any of those tasks. To "complete" a task, the user is actually editing the status of that task with a `patch` request, changing it from "open" to "complete" Once I got tasks working, I added Events (very similar to tasks but without the option to complete or migrate)
 
