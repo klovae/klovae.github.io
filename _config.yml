@@ -1,15 +1,14 @@
 # Site settings
+author: Elyse Klova
 title: Hello, World
 header-img: img/home-bg.png
 email: elyse.klova@gmail.com
-copyright_name: klovae
+copyright_name: Elyse Klova
 description: > # this means to ignore newlines until "baseurl:"
   What happens after you figure out what you want to do when you grow up
 baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: klovae
 github_username:  klovae
-learn_profile: klovae
-email_username: elyse.klova@gmail.com
 
 # Build settings
 markdown: kramdown
