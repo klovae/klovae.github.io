@@ -19,5 +19,5 @@ To that end, let's get to talking about my Rails Project.
 
 In a lot of ways, my Rails project builds on the learning from my [Sinatra Project](http://elyseklova.com/2017/02/16/making_a_sinatra_app_bujo_2_0.html). I built a digital version of the bulleted to-do list system that has become ubiquitous in the last 5 years or so. While I was getting back on the horse with coding and solidifying my knowledge of Rails, I actually [fully redid my Sinatra app](https://github.com/klovae/bujo-3-point-0) in Rails before moving on to my official project domain, a light project management system. Meet Tandem:
 
-![](https://imgur.com/a/osoagMW)
+![](https://i.imgur.com/hxuaIkf.png)
 
